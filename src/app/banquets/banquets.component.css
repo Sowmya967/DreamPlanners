@@ -1,0 +1,46 @@
+.centered {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: xx-large;
+  }
+  img{
+    opacity: 0.8;
+}
+.img1{
+    position: absolute;
+    right: 50px;
+}
+.img4{
+    position: relative;
+    top: 2%;
+}
+.img2{
+  position: absolute;
+  right: 50px;
+  top: 52%;
+}
+#slide{
+  animation: slideme 1s ease-in;
+}
+@keyframes slideme{
+  0%{
+      transform: skewX(0deg) translateX(-500px);
+  }
+  100%{
+      transform: skew(0deg);
+  }
+}
+#slideme{
+  animation: slide 1s ease-in;
+}
+@keyframes slide{
+  0%{
+      transform: skewX(0deg) translateX(500px); 
+  }
+  100%{
+      transform: skew(0deg);
+  }
+}

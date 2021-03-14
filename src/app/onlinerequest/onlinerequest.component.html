@@ -1,0 +1,80 @@
+<!--<div class="container">
+  <form #ref="ngForm">
+      <name>
+      <div class="form-group">
+        <label for="un">Name:</label>
+        <input type="text" name="name" id="un" ngModel class="form-control" required #ref1="ngModel">
+      </div>
+      <validation of name>
+      <div *ngIf="ref1.touched&&ref1.invalid" class="text-danger">*Name is required</div>
+      <phone>
+      <div class="form-group">
+        <label for="ph">Phone:</label>
+        <input type="number" name="phone" id="ph" ngModel class="form-control" required minlength="10" #ref2="ngModel">
+      </div>
+      <validation of phone>
+      <div *ngIf="ref2.touched&&ref2.invalid" class="text-danger">*Mobile number is required</div>
+      <message>
+      <div class="form-group">
+        <label for="msg">Message:</label>
+        <textarea name="message" id="msg" cols="20" rows="5" ngModel class="form-control" required #ref3="ngModel"></textarea>
+      </div>
+      <validation of msg>
+      <div *ngIf="ref3.touched&&ref3.invalid" class="text-danger">*Message is required</div>
+      <submit>
+      <div class="text-center">
+        <button type="submit" class="btn btn-success" [disabled]="ref.invalid">Submit</button>
+      </div>
+  </form>
+</div>
+
+<table class="table table-bordered">
+  <thead>
+    <th>Id</th>
+    <th>Title</th>
+    <th>Body</th>
+  </thead>
+  <tr *ngFor="let obj of ReceivedData">
+    <td>{{obj.id}}</td>
+    <td>{{obj.title}}</td>
+    <td>{{obj.body}}</td>
+  </tr>
+</table>-->
+
+<link href='https://fonts.googleapis.com/css?family=Rock Salt' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Share Tech' rel='stylesheet'>
+<!--Footer-->
+<footer class="text-white" id="footer" style="background-color: black;">
+  <div class="container">
+    <br><br><br>
+    <div class="row" style="opacity: 0.5;">
+      <div class="col-6">
+        <h3 style="font-family: 'Rock Salt'; text-align: center; color: red ;">Dream Planners</h3><br>
+        <p>Dream Planners is an full service event management company which believes in creating exceptional & flawless event experiences. We believe in creating moments which shall become memories to be cherished forever. Take a step ahead and plan your Events with Dream Planners-The best Event Management Company In Hyderabad.</p>
+      </div>
+      <div class="col-6">
+        <p style="text-align: center;">Get In Touch With Us!</p>
+          <div class="row">
+              <div class="col-6">
+                  <div>Hyderabad:</div>
+                  <div>Address: Plot#17, Sri Nilayam, KavuriHills, Madhapur, Hyderabad, Telangana-500081</div>
+                  <div>E-Mail: info@dreamplanners.com</div>
+                  <div>Phone: +91 9000433000</div>
+                  <div>Office: 040-48699885</div>
+              </div>
+              <div class="col-6">
+                  <div>Vijayawada:</div>
+                  <div>Address: Door No 29-19-63, Opposite Citi Hospital, Beside Andhra Bank ATM Dornakal Road, Suryarao Pet, Vijayawada - 520002</div>
+                  <div>E-Mail: info@dreamplanners.com</div>
+                  <div>Phone: +91 9000234000</div><br>
+              </div>
+          </div>          
+          </div>
+    </div>
+     <!-- Copyright -->
+     <div class="text-center p-3" style="font-family: 'Share Tech';">
+        Copyright © 2021 - All Rights Reserved - Dream Planners
+    </div>
+  <!-- Copyright -->
+  </div>
+</footer>

@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+  }
+  
+  /* Bottom right text */
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Alegreya SC';
+  }
+  .jumbotron{
+      font-size: xx-large;
+      font-family: cursive;
+      text-align: center;  
+      color: crimson;
+  }
+  
+
+  
+  

@@ -1,0 +1,107 @@
+<img src="./assets/pics/cont.jpg" alt="no img" width="100%" height="250px"><br><br><br>
+<h3 style="text-align: center;" >Corporate Office</h3><br>
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <p style="font-weight: 700; color: lightsalmon; font-size: x-large;">Hyderabad</p>
+            <p><b>Address:</b> Plot#17, Sri Nilayam, KavuriHills, Madhapur, Hyderabad, Telangana-500081</p>
+            <p><b>E-Mail:</b> info@dreamplanners.com</p>
+            <p><b>Phone:</b> +91 9000433000</p>
+            <p><b>Office:</b> 040-48699885</p>
+        </div>
+        <div class="col-6">
+            <p style="font-weight: 700; color: lightsalmon; font-size: x-large;">Vijayawada</p>
+            <p><b>Address:</b> Door No 29-19-63, Opposite Citi Hospital, Beside Andhra Bank ATM Dornakal Road, Suryarao Pet, Vijayawada - 520002</p>
+            <p><b>E-Mail:</b> info@dreamplanners.com</p>
+            <p><b>Phone:</b> +91 9000234000</p>
+            <p><b>Office:</b> 040-48798886</p>
+        </div>
+    </div>
+    <hr>
+
+    <p style="text-align: center; font-size: xx-large; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Get In Touch</p>
+    <p style="text-align: center;">If you got any questions, Please send us a message. We are happy to reply within 24 hours!</p>
+    
+    <form #ref="ngForm" (ngSubmit)="sendData(ref)">
+        <div class="row">
+            <div class="col-6">
+               <label for="nm">Name*</label><br>
+               <input type="text" name="name" placeholder="Please Enter Your Name" id="nm" ngModel class="form-control" required #ref1="ngModel">
+               <div *ngIf="ref1.touched&&ref1.invalid" class="text-danger">*Name is required</div>
+            </div>
+            <div class="col-6">
+              <label for="em">Email Id*</label><br>
+              <input type="email" name="email" placeholder="Please Enter Your Email Id" id="em" ngModel class="form-control" required #ref2="ngModel">
+              <div *ngIf="ref2.touched&&ref2.invalid" class="text-danger">*Email is required</div>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-6">
+                <label for="mb">Mobile Number*</label><br>
+                <input type="number" name="mobile" placeholder="Please Enter Your Mobile Number" id="mb" ngModel class="form-control" required #ref3="ngModel" minlength="10">
+                <div *ngIf="ref3.touched&&ref3.invalid" class="text-danger">*Mobile Number is required</div>          
+            </div>
+            <div class="col-6">
+                <label for="cat">Please Select Category*</label><br>
+                <select name="category" id="cat" class="form-control" ngModel class="form-control" required #ref4="ngModel">
+                    <option value="sc" selected>Select Categories</option>
+                    <option value="se">Social Events</option>
+                    <option value="wr">Weddings & Reception</option>
+                    <option value="ce">Corporate Meetings & Events</option>
+                    <option value="bq">Banquets & Galas</option>
+                </select>
+                <div *ngIf="ref4.touched&&ref4.invalid" class="text-danger">*Select any Category</div>
+            </div>
+        </div>  
+        <label for="msg">Message*</label>
+        <textarea name="message" id="msg" cols="20" rows="5" placeholder="Please Enter Your Message" ngModel class="form-control" required #ref5="ngModel"></textarea>
+        <div *ngIf="ref5.touched&&ref5.invalid" class="text-danger">*Message is required</div><br>
+        <button type="submit" class="btn btn-success" [disabled]="ref.invalid">Submit</button>
+    </form>
+</div><br><br>
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<div class="primary-color">
+    <div class="container">
+        <!--Grid row-->
+        <div class="row py-4 d-flex align-items-center">
+
+            <!--Grid column-->
+            <div class="col-md-8 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                <h6 class="mb-0 white-text">Get connected with us on social networks!</h6>
+            </div>
+            <!--Grid column-->
+
+            <!--Grid column-->
+            <div class="col-md-4 col-lg-7">
+                <!--Facebook-->
+                <a class="fb-ic ml-0">
+                    <i class="fab fa-facebook white-text mr-4"> </i>
+                </a>
+                <!--Twitter-->
+                <a class="tw-ic">
+                    <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!--Google +-->
+                <a class="gplus-ic">
+                    <i class="fab fa-google-plus white-text mr-4"> </i>
+                </a>
+                <!--Linkedin-->
+                <a class="li-ic">
+                    <i class="fab fa-linkedin white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                    <i class="fab fa-instagram white-text mr-lg-4"> </i>
+                </a>
+            </div>
+            <!--Grid column-->
+
+        </div>
+        <!--Grid row-->
+    </div>
+</div>
+
+
+
